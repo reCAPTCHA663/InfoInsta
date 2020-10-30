@@ -113,7 +113,7 @@ postHeaders = {'Host':'i.instagram.com',
                   }
 x = s.post ('https://i.instagram.com/api/v1/accounts/create/',headers=postHeaders,data=payload)
 résultat = json.loads (x.content)
-if result ['status']! = 'fail':
+si      résultat [ 'statut' ] !      =  (    "échec:" )
         si résultat ['account_created'] == True:
             print ('Le compte a été créé avec succès')
         autre:
